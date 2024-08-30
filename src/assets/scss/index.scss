@@ -1,0 +1,27 @@
+@import 'utils';
+@import 'colors';
+
+@import 'header';
+@import 'result';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: pxToRem(16);
+}
