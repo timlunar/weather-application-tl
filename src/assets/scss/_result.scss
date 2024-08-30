@@ -1,0 +1,92 @@
+.result {
+  &-container {
+    display: grid;
+    gap: pxToRem(32);
+    grid-template-columns: 1fr;
+    padding-top: pxToRem(32);
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__inner {
+      max-height: 60vh;
+      overflow-y: auto;
+
+      &-wrapper {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-wrapper {
+    padding: pxToRem(16);
+    border-radius: pxToRem(8);
+    border: 1px solid lightgrey;
+    color: $black;
+
+    &.fixed {
+      max-height: pxToRem(200);
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    &__data {
+      padding-top: 1rem;
+
+      p {
+        padding-bottom: pxToRem(4);
+      }
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: pxToRem(16);
+    background-color: $white-light;
+    border-radius: pxToRem(8);
+    padding: 1rem;
+
+    &:hover {
+      background-color: rgba($orange-light, 0.1);
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      //padding-bottom: pxToRem(8);
+
+      &-title {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    &__date {
+      color: $date-color;
+      margin-left: auto;
+      font-size: pxToRem(12);
+      padding-bottom: pxToRem(4);
+      padding-left: pxToRem(4);
+    }
+
+    &__inline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.delete-history {
+  border: none;
+  background-color: transparent;
+  color: red;
+}
