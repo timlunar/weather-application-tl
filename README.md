@@ -1,6 +1,8 @@
 # weather-app-tl
 
-Simple Vue 3 + Vite weather app using [OpenWeather API]: https://openweathermap.org/current#name
+Simple Vue 3 + Vite weather app using [OpenWeather][1] API.
+
+[1]: https://openweathermap.org/current#name            "OpenWeather"
 
 ## Project Setup
 
