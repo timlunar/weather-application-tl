@@ -6,9 +6,7 @@ Simple Vue 3 + Vite weather app using [OpenWeather][1] API.
 
 ## Project Setup
 
-```sh
-nvm use 20
-```
+Project built in node version 20
 
 ```sh
 npm install
